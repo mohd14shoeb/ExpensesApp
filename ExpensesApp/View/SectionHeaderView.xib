@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SectionHeaderView" customModule="ExpensesApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="359" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cqH-j7-ig8">
+                    <rect key="frame" x="0.0" y="2" width="359" height="42"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPB-52-F3F">
+                            <rect key="frame" x="8" y="0.0" width="343" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" id="tmn-jI-vjs"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="JPB-52-F3F" secondAttribute="bottom" id="1Ti-FL-dVR"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="8L5-J9-nFK"/>
+                        <constraint firstAttribute="trailing" secondItem="JPB-52-F3F" secondAttribute="trailing" constant="8" id="abv-bu-La8"/>
+                        <constraint firstItem="JPB-52-F3F" firstAttribute="leading" secondItem="cqH-j7-ig8" secondAttribute="leading" constant="8" id="cqb-ws-rST"/>
+                        <constraint firstItem="JPB-52-F3F" firstAttribute="top" secondItem="cqH-j7-ig8" secondAttribute="top" id="gRY-Xa-9m2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="cqH-j7-ig8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="250-T1-ftF"/>
+                <constraint firstAttribute="bottom" secondItem="cqH-j7-ig8" secondAttribute="bottom" id="5Tw-Md-XBu"/>
+                <constraint firstAttribute="trailing" secondItem="cqH-j7-ig8" secondAttribute="trailing" id="Hdx-VK-BTG"/>
+                <constraint firstItem="cqH-j7-ig8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="2" id="w2P-8h-xC6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="sctionHeaderContainerView" destination="cqH-j7-ig8" id="c79-PA-5s1"/>
+                <outlet property="sectionTitleLabel" destination="JPB-52-F3F" id="bM5-bo-Vu7"/>
+            </connections>
+            <point key="canvasLocation" x="97.826086956521749" y="-165.40178571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
